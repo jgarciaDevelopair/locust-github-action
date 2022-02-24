@@ -12,5 +12,5 @@ locust -f $file --csv=results --headless -u $INPUT_USERS -r $INPUT_RATE --run-ti
 
 for filename in *.csv; do
     [ -e "$filename" ] || continue
-    s3 cp "$filename" "S3_BUCKET/"
+    aws s3 cp "$filename" "S3_BUCKET/"
 done
