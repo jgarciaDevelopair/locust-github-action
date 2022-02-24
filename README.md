@@ -1,5 +1,5 @@
 # Load Testing with Locust
-A GitHub action for load testing using Locust
+A GitHub action for load testing using Locust with mechanicalsoup dependency.
 
 ### Sample Workflow
 ```yml
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Run Load Test
-        uses: apardo04/locust-github-action@master
+        uses: jgarciaDevelopair/locust-github-action@master
         with:
           LOCUSTFILE: "locustfile.py"
           URL:  "https://google.com"
