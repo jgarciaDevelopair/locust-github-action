@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if[ -z"$INPUT_LOCUSTFILE"]
+if [ -z "$INPUT_LOCUSTFILE" ]
 then
     file="/locustfile.py"
 else
